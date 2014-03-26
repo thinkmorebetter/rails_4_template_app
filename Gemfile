@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 1.2'
 
 # bootstrap
 gem 'bootstrap-sass'
+gem 'font-awesome-rails', '~> 4.0.3.1'
 
 # progress bar
 gem 'nprogress-rails'

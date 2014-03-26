@@ -27,7 +27,7 @@ Fineport::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -40,7 +40,7 @@ Fineport::Application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # Set to :debug to see everything in the log.
   config.log_level = :info
@@ -80,8 +80,10 @@ Fineport::Application.configure do
     user_name: ENV["SENDGRID_USERNAME"],
     password: ENV["SENDGRID_PASSWORD"]
   }
+  
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'example.com' }
+  email_url_host = ENV["EMAIL_URL_HOST"] ? ENV["EMAIL_URL_HOST"] : "fineport.herokuapp.com"
+  config.action_mailer.default_url_options = { :host => email_url_host }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false

@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/adzap/active_enum.git
+  revision: 280548e3954d8f9e032968dd2757b7e5862cdf49
+  specs:
+    active_enum (0.9.12)
+      activesupport (>= 3.0)
+
+GIT
   remote: git://github.com/ctran/annotate_models.git
   revision: ed327d5a15226d0b5f78ab1d47649c0fdab66c8f
   specs:
@@ -233,6 +240,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_enum!
   annotate!
   awesome_print
   better_errors

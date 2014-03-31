@@ -52,6 +52,10 @@ gem 'awesome_print'       # for pretty console printing
 # comment it out when needing the latest heroku binary from the toolbelt
 gem 'heroku', :require => false
 
+# for nicer enums
+# use github version for now: https://github.com/adzap/active_enum/issues/5
+gem 'active_enum', github: 'adzap/active_enum'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]

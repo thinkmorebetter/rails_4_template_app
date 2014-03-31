@@ -85,7 +85,7 @@ Rails4TemplateApp::Application.configure do
   }
   
   # ActionMailer Config
-  email_url_host = ENV["EMAIL_URL_HOST"] ? ENV["EMAIL_URL_HOST"] : "fineport.herokuapp.com"
+  email_url_host = ENV["EMAIL_URL_HOST"] ? ENV["EMAIL_URL_HOST"] : "yoursite.herokuapp.com"
   config.action_mailer.default_url_options = { :host => email_url_host }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true

@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Fineport::Application.load_tasks
+Rails4TemplateApp::Application.load_tasks

@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
-module Fineport
+module Rails4TemplateApp
   class Application < Rails::Application
 
     # don't generate RSpec tests for views and helpers

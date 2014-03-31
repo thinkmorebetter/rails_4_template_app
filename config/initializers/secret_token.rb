@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Fineport::Application.config.secret_key_base = 'f75b46c1ad37c65e1fbaecd90ffcca670f228d6e4030812b9df1fcfca986362e79dafd12cc9039928e317027e39ba98857f04234505713ecc8ce4ed650aebc0b'
+Rails4TemplateApp::Application.config.secret_key_base = 'f75b46c1ad37c65e1fbaecd90ffcca670f228d6e4030812b9df1fcfca986362e79dafd12cc9039928e317027e39ba98857f04234505713ecc8ce4ed650aebc0b'

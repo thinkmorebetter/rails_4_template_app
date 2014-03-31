@@ -1,4 +1,4 @@
-Fineport::Application.routes.draw do
+Rails4TemplateApp::Application.routes.draw do
   devise_for :users
   
   root :to => "pages#home"
